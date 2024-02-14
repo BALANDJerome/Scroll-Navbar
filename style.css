@@ -15,7 +15,7 @@ nav {
   width: 100%;
   background: rgb(26, 26, 26);
   height: 60px;
-  top: -60px;
+  /* top: -60px; */
   transition: 0.3s;
 }
 h2,
@@ -25,6 +25,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+li {
+  cursor: pointer;
 }
 header {
   background: url(./bg.jpg) center/cover;
