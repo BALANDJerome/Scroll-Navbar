@@ -1,15 +1,10 @@
-const navbar = document.querySelector("nav");
-let a = "";
-
-setInterval(() => {
-  a = window.scrollY;
-}, 10);
+let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-  let b = window.scrollY;
-  if (a < b && a > 10) {
+  if (lastScroll < window.scrollY) {
     navbar.style.top = "-60px";
   } else {
     navbar.style.top = "0px";
   }
+  lastScroll = window.scrollY;
 });
